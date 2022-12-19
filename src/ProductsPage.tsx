@@ -8,7 +8,7 @@ const ProductsPage: React.FunctionComponent = () => {
 	const [products, setProducts] = React.useState(productsData);
 	const [searchParams, setSearchParams] = useSearchParams();
 	const searchMe = searchParams.get("search");
-	console.log(searchMe);
+
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		setSearch(event.target.value);
 	};
